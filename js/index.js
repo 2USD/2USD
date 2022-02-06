@@ -8,8 +8,6 @@ var account = null;
 var myContract = null;
 var walletConnected = false;
 var contractAddress = null;
-var Web3 = require('web3');
-
 
 async function initWeb3(){
      if (typeof window.ethereum !== 'undefined') {
