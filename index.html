@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<title>2USD DAO</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Cryptocurrency Landing Page Template">
+	<meta name="keywords" content="cryptocurrency, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/themify-icons.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<div data-aos="fade-in">
+	<header class="header-section clearfix">
+		<div class="container-fluid">
+			<a href="index.html" class="site-logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
+			<a href="" class="user"><i class="fa fa-user"></i></a>
+			<a class="site-btn" onclick="initWeb3();">Connect Metamask</a>
+			<nav class="main-menu">
+				<ul class="menu-list">
+					<li><a href="#buy-tokens">Buy 2USD</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</header>
+	<!-- Header section end -->
+
+	
+	<!-- Hero section -->
+	<a id="buy-tokens"></a>
+	<div data-aos="fade-in" data-aos-duration="1400">
+	<section class="hero-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 hero-text">
+					<h2>Get a little more<br><span>Stability</span></h2>
+					<h4>2USD is the newest ERC-20 stablecoin that allows you to trade, stake, and invest in all of your favorite projects - all while having your funds protected at a pegged echange price of $2 USD</h4>
+					<br><h5><b>Currently offering 2USD tokens at just $1 USD per coin!</b> Special presale ends March 1st, purchase now for a guaranteed 2x return at launch</h5>
+					<form class="hero-subscribe-from" name="purchaseForm" id="purchaseForm" onSubmit="submitPurchase(); return false;">
+						<input type="text" placeholder="# of 2USD to purchase" id="numTokens">
+						<select class="hero-select" id="tokName"> 
+							<option selected disabled value = "null">Choose exchange token</option>
+							<option value="USDC">USDC</option>
+  							<option value="USDT">USDT</option>
+							<option value="DAI">DAI</option>
+							<option value="WETH">WETH</option>
+							<option value="LINK">LINK</option>
+							<option value="AAVE">AAVE</option>
+						</select>
+						<button class="site-btn sb-gradients" type="submit">Approve Transfer</button>
+					</form>
+					<h6>1. Connect wallet to the <a href="https://polygonscan.com/">Polygon Network</a></h6>
+					<h6>2. Enter the # of 2USD tokens to recieve and select the exchange token</h6>
+					<h6>3. Click "approve transfer" and approve access for the 2USD smart contract</h6>
+					<h6>4. Wait patiently for the approval to be performed, then accept a second transaction to swap your tokens!</h6>
+					
+				</div>
+				<div class="col-md-6">
+					<img src="img/laptop.png" class="laptop-image" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+	<!-- Hero section end -->
+	<div data-aos="fade-in" data-aos-duration="2000">
+	<!-- Process section -->
+	<section class="process-section spad">
+		<div class="container">
+			<div class="section-title text-center">
+				<h2>How to purchase 2USD</h2>
+				<p>Remember, 2USD only supports the Polygon MATIC network. Add Polygon on <a href="https://polygonscan.com/">polygonscan</a>. </p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="img/process-icons/1.png" alt="#">
+						</figure>
+						<h4>Enter amount</h4>
+						<p>Enter the amount of 2USD tokens you wish to receive and select the exchange token to wish to trade with.</p>
+					</div>
+				</div>
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="img/process-icons/2.png" alt="#">
+						</figure>
+						<h4>Approve transfer</h4>
+						<p>Just like any DEX, 2USD needs you to approve the transfer of your selected exchange token.</p>
+					</div>
+				</div>
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="img/process-icons/3.png" alt="#">
+						</figure>
+						<h4>Wait, then approve again</h4>
+						<p>After approving the transfer, wait to sign a second transaction to exchange tokens and send you your 2USD.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+	<!-- Process section end -->
+
+
+	
+
+
+	<!-- Features section -->
+	<div data-aos="fade-in" data-aos-duration="2000">
+	<a id="features"></a>
+	<section class="features-section spad gradient-bg">
+		<div class="container text-white">
+			<div class="section-title text-center">
+				<h2>Our Features</h2>
+				<p><b>2USD lets you explore the world of DEFI, safely.</b></p>
+			</div>
+			<div class="row">
+				<!-- feature -->
+				<div class="col-md-6 col-lg-4 feature">
+					<i class="ti-mobile"></i>
+					<div class="feature-content">
+						<h4>Borrow</h4>
+						<p>Use your 2USD as collateral to borrow up to 2.3x the token of your choice. APY rates as low as 3%.</p>
+						<a href="" class="readmore">Read more</a>
+					</div>
+				</div>
+				<!-- feature -->
+				<div class="col-md-6 col-lg-4 feature">
+					<i class="ti-shield"></i>
+					<div class="feature-content">
+						<h4>Insurance</h4>
+						<p>All 2USD holders gain access to the <b>2usdDAO</b> insurance Smart Contract. This smart contract leverages blockchain rollup to refund fraudulent transactions.</p>
+						<a href="" class="readmore">Readmore</a>
+					</div>
+				</div>
+				<!-- feature -->
+				<div class="col-md-6 col-lg-4 feature">
+					<i class="ti-wallet"></i>
+					<div class="feature-content">
+						<h4>2X return at project launch</h4>
+						<p>2USD launches officially on May 1st for exactly $2. Purchasing now for $1 guarantees a 2x return on your investment.  </p>
+						<a href="" class="readmore">Readmore</a>
+					</div>
+				</div>
+				<!-- feature -->
+				<div class="col-md-6 col-lg-4 feature">
+					<i class="ti-headphone-alt"></i>
+					<div class="feature-content">
+						<h4>Governance</h4>
+						<p>All 2USD holders gain governace rights to 2usdDAO. Share your ideas to improve the future of DEFI.</p>
+						<a href="" class="readmore">Readmore</a>
+					</div>
+				</div>
+				<!-- feature -->
+				<div class="col-md-6 col-lg-4 feature">
+					<i class="ti-reload"></i>
+					<div class="feature-content">
+						<h4>Fraud protection</h4>
+						<p>Utilize 2USD's smart contract rollup technology to reverse scam trades. Never worry about rugpulls again!</p>
+						<a href="" class="readmore">Readmore</a>
+					</div>
+				</div>
+				<!-- feature -->
+				<div class="col-md-6 col-lg-4 feature">
+					<i class="ti-panel"></i>
+					<div class="feature-content">
+						<h4>Stake token</h4>
+						<p>Automatically manage staking at all exchanges that list 2USD, average APY of 40%.</p>
+						<a href="" class="readmore">Readmore</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+	<!-- Features section end -->
+
+	<!-- About section -->
+	<a id="about"></a>
+	<div data-aos="fade-in" data-aos-duration="2000">
+	<section class="about-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-6 about-text">
+					<h2>What is 2USD?</h2>
+					<h5>From now until March 1st, <b>2usdDAO</b> is selling 2USD tokens for $1 to increase token holders</h5>
+					<p>2USD is an ERC-20 token that also acts as the governace token for <b>2usdDAO</b>. After a limited presale, all 2USD tokens will be sold with $2 cash in collateral to allow withdrawl at any time. Holders of 2USD can stake their token for governance rewards 
+						and use their token as collateral to take out loans with up to 2.3x margin at 3&#37 APY. With 2USD as collateral, users can keep their funds secure while still trading and investing with their favorite tokens.</p>
+						<br>
+						<p><b>Purchase now for just $1 to get a <b>2x return</b> on launch day!</b></p>
+				<!--	<a href="" class="site-btn sb-gradients sbg-line mt-5">Get Started</a> -->
+				</div>
+			</div>
+			<div class="about-img">
+				<img src="img/about.png" alt="">
+			</div>
+		</div>
+	</section>
+</div>
+	<!-- About section end -->
+
+
+	
+
+	<div data-aos="fade-in" data-aos-duration="2000">
+	<!-- Fact section -->
+	<section class="fact-section gradient-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>60</h2>
+						<p>Support <br> Countries</p>
+						<i class="ti-basketball"></i>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>40K</h2>
+						<p>Transactions  <br> per hour</p>
+						<i class="ti-panel"></i>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>5B</h2>
+						<p>Transaction <br> Volume</p>
+						<i class="ti-stats-up"></i>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>>30</h2>
+						<p>Combined Years <br> of Experience</p>
+						<i class="ti-user"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- Fact section end -->
+</div>
+	
+
+
+	
+	<!-- Team section -->
+	<a id="team"></a>
+	<div data-aos="fade-in" data-aos-duration="2000">
+	<section class="team-section spad">
+		
+		<div class="container">
+			<div class="section-title text-center">
+				<h2>Meet Our Team</h2>
+				<p>Our experts in the field of crypto currency can always help you with any of your questions!</p>
+			</div>
+		</div>
+		<div class="team-members clearfix">
+			<!-- Team member -->
+			<div class="member">
+				<div class="member-text">
+					<div class="member-img set-bg" data-setbg="img/member/1.jpg"></div>
+					<h2>Tom Binegar</h2>
+					<span>Business Development</span>
+				</div>
+				<div class="member-social">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="member-info">
+					<div class="member-img mf set-bg" data-setbg="img/member/1.jpg"></div>
+					<div class="member-meta">
+						<h2>Tom Binegar</h2>
+						<span>Business Development</span>
+					</div>
+					<p>Former head of business operations for Uniswap, Tom Binegar is excited about the exciting 2.3x margin loans that 2USD enables for holders.</p>
+				</div>
+			</div>
+			<!-- Team member -->
+			<div class="member">
+				<div class="member-text">
+					<div class="member-img set-bg" data-setbg="img/member/2.jpg"></div>
+					<h2>Laura Lee</h2>
+					<span>Community Management</span>
+				</div>
+				<div class="member-social">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="member-info">
+					<div class="member-img mf set-bg" data-setbg="img/member/2.jpg"></div>
+					<div class="member-meta">
+						<h2>Laura Lee</h2>
+						<span>Community Management</span>
+					</div>
+					<p>An avid NFT collector and former Bored Ape Yacht Club community manager, Laura belives in the power of the DEFI community and the revolutionary abilities that DAOs bring.</p>
+				</div>
+			</div>
+			<!-- Team member -->
+			<div class="member">
+				<div class="member-text">
+					<div class="member-img set-bg" data-setbg="img/member/3.jpg"></div>
+					<h2>Jackson Nash</h2>
+					<span>CEO and Founder</span>
+				</div>
+				<div class="member-social">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="member-info">
+					<div class="member-img mf set-bg" data-setbg="img/member/3.jpg"></div>
+					<div class="member-meta">
+						<h2>Jackson Nash</h2>
+						<span>CEO and Founder</span>
+					</div>
+					<p>After helping create the revolutionary Safemoon token, Jackson became upset with the current volatility of the crypto market. He created 2USD and 2usdDAO as a way to safely explore the ecostystem.</p>
+				</div>
+			</div>
+			<!-- Team member -->
+			<div class="member">
+				<div class="member-text">
+					<div class="member-img set-bg" data-setbg="img/member/4.jpg"></div>
+					<h2>Aaron Smith</h2>
+					<span>Product Manager</span>
+				</div>
+				<div class="member-social">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="member-info">
+					<div class="member-img mf set-bg" data-setbg="img/member/4.jpg"></div>
+					<div class="member-meta">
+						<h2>Aaron Smith</h2>
+						<span>Product Manager</span>
+					</div>
+					<p>Formerly head of product at Binance, Aaron Smith joined the 2USD team to create a more decentralized project without the need for a large corporation like Binance.</p>
+				</div>
+			</div>
+			<!-- Team member -->
+			<div class="member">
+				<div class="member-text">
+					<div class="member-img set-bg" data-setbg="img/member/5.jpg"></div>
+					<h2>Jessica Chen</h2>
+					<span>Lead programmer</span>
+				</div>
+				<div class="member-social">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="member-info">
+					<div class="member-img mf set-bg" data-setbg="img/member/5.jpg"></div>
+					<div class="member-meta">
+						<h2>Jessica Chen<</h2>
+						<span>Lead programmer</span>
+					</div>
+					<p>An ex-google development lead, Jessica has developed in the DEFI space for over five years! She's always astounded by how far things have come.</p>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+</div>
+	<!-- Team section -->
+
+
+	<!-- Review section -->
+	<div data-aos="fade-in" data-aos-duration="2000">
+	<section class="review-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 push-8">
+					<img src="img/quote.png" alt="" class="quote mb-5">
+					<div class="review-text-slider owl-carousel">
+						<div class="review-text">
+							<p>"As an experienced investor, being able to purchase 2USD for just $1 during this presale is an opprtunity I can't turn down.”</p>
+						</div>
+						<div class="review-text">
+							<p>"2USD lets users explore DEFI safely, while still being able to invest in all of their favorite projects! It's a win-win.”</p>
+						</div>
+						<div class="review-text">
+							<p>"2USD's fraud protection is a revolutionary use of blockchain rollup technology.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pr-0 pull-3">
+					<div class="review-meta-slider owl-carousel pt-5">
+						<div class="author-meta">
+							<div class="author-avatar set-bg" data-setbg="img/review/1.jpg"></div>
+							<div class="author-name">
+								<h4>John Karnoy</h4>
+								<p>CEO Safemoon</p>
+							</div>
+						</div>
+						<div class="author-meta">
+							<div class="author-avatar set-bg" data-setbg="img/review/2.jpg"></div>
+							<div class="author-name">
+								<h4>Micah Richards</h4>
+								<p>Venture capital investor</p>
+							</div>
+						</div>
+						<div class="author-meta">
+							<div class="author-avatar set-bg" data-setbg="img/review/3.jpg"></div>
+							<div class="author-name">
+								<h4>Katy Abrams</h4>
+								<p>Uniswap developer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Review section end -->
+	</div>
+
+
+	<!-- Newsletter section -->
+	<a id="contact"></a>
+	<section class="newsletter-section gradient-bg">
+		<div class="container text-white">
+			<div class="row">
+				<div class="col-lg-7 newsletter-text">
+					<h2>Subscribe to our Newsletter</h2>
+					<p>Sign up for our weekly industry updates, insider perspectives and in-depth market analysis.</p>
+				</div>
+				<div class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
+					<form class="newsletter-form">
+						<input type="text" placeholder="Enter your email">
+						<button>Get Started</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Newsletter section end -->
+
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row spad">
+				<div class="col-md-6 col-lg-3 footer-widget">
+					<img src="img/logo.png" class="mb-4" alt="">
+					<p></p>
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+					<h5 class="widget-title">Resources</h5>
+					<ul>
+						<li><a href="#">How to buy 2USD</a></li>
+						<li><a href="#">Coin Overview</a></li>
+						<li><a href="#">Blog News</a></li>
+						<li><a href="#">Release timeline</a></li>
+						<li><a href="#">User Forum</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+					<h5 class="widget-title">Quick Links</h5>
+					<ul>
+						<li><a href="#">Network Stats</a></li>
+						<li><a href="#">Block Explorers</a></li>
+						<li><a href="#">Governance</a></li>
+						<li><a href="#">Exchange Markets</a></li>
+						<li><a href="#">Invest</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
+					<h5 class="widget-title">Follow Us</h5>
+					<div class="social">
+						<a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="" class="google"><i class="fa fa-google-plus"></i></a>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+						<a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
+						
+					</div>
+					<div class="col-lg-8 text-center text-lg-right">
+						<ul class="footer-nav">
+							<li><a href="">DPA</a></li>
+							<li><a href="">Terms of Use</a></li>
+							<li><a href="">Privacy Policy </a></li>
+							<li><a href="">inquiries@2USD.com</a></li>
+							<li><a href="">(943) 361-9073</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="./node_modules/web3/dist/web3.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/index.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	
+</body>
+</html>
